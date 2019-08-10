@@ -14,7 +14,7 @@ namespace ReadEmail
         {
             var outlookApplication = new Application();
             var outlookNameSpace = outlookApplication.GetNamespace("MAPI");
-            var folder = outlookNameSpace.Folders["jamieho@microsoft.com"].Folders["Inbox"];
+            var folder = outlookNameSpace.Folders["jamieho@microsoft.com"].Folders["Todo"];
 
             foreach (MailItem mailItem in folder.Items)
             {
